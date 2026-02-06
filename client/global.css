@@ -57,6 +57,11 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* CHATRON Neon Colors */
+    --chatron-purple: 270 100% 60%;
+    --chatron-cyan: 180 100% 50%;
+    --chatron-dark: 240 10% 8%;
   }
 
   .dark {
