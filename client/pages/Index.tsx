@@ -64,13 +64,13 @@ export default function Index() {
         <div className="flex gap-6 justify-center">
           <Button
             onClick={() => navigate("/chatron/dashboard")}
-            className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-3 text-lg"
+            className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-3 text-lg font-semibold shadow-lg shadow-purple-500/50"
           >
             Dashboard
           </Button>
           <Button
             onClick={() => navigate("/chatron/chat")}
-            className="bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-700 hover:to-cyan-800 text-white px-8 py-3 text-lg"
+            className="bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-700 hover:to-cyan-800 text-white px-8 py-3 text-lg font-semibold shadow-lg shadow-cyan-500/50"
           >
             Chat Interface
           </Button>
