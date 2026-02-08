@@ -37,24 +37,24 @@ export default function Index() {
         <div className="grid grid-cols-3 gap-6 mb-12">
           <Card className="neon-border p-6 backdrop-blur">
             <div className="text-4xl mb-3">🔮</div>
-            <h3 className="text-purple-300 font-semibold mb-2">Superposition</h3>
-            <p className="text-sm text-gray-400">
+            <h3 className="text-purple-200 font-semibold mb-2 text-lg">Superposition</h3>
+            <p className="text-sm text-gray-100">
               ENON generates diverse planning superpositions
             </p>
           </Card>
 
           <Card className="neon-border p-6 backdrop-blur">
             <div className="text-4xl mb-3">💫</div>
-            <h3 className="text-cyan-300 font-semibold mb-2">Affective Alignment</h3>
-            <p className="text-sm text-gray-400">
+            <h3 className="text-cyan-200 font-semibold mb-2 text-lg">Affective Alignment</h3>
+            <p className="text-sm text-gray-100">
               PAS engine weights plans by emotional state
             </p>
           </Card>
 
           <Card className="neon-border p-6 backdrop-blur">
             <div className="text-4xl mb-3">⚖️</div>
-            <h3 className="text-purple-300 font-semibold mb-2">Ethical Validation</h3>
-            <p className="text-sm text-gray-400">
+            <h3 className="text-purple-200 font-semibold mb-2 text-lg">Ethical Validation</h3>
+            <p className="text-sm text-gray-100">
               Ethics Council ensures moral compliance
             </p>
           </Card>
