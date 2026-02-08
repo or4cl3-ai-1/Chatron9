@@ -22,14 +22,14 @@ export default function Index() {
         </div>
 
         {/* Title and Description */}
-        <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 mb-4">
+        <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-cyan-300 mb-4">
           CHATRON-1
         </h1>
-        <p className="text-2xl text-gray-300 mb-2">The Daedalus Nexus</p>
-        <p className="text-gray-400 mb-12 text-lg leading-relaxed">
-          Epinoetic orchestration powered by <span className="text-purple-300">ENON Core</span>,
-          <span className="text-cyan-300"> PAS Engine</span>, and the
-          <span className="text-purple-300"> Ethics Council</span>.
+        <p className="text-2xl text-white mb-2">The Daedalus Nexus</p>
+        <p className="text-gray-100 mb-12 text-lg leading-relaxed">
+          Epinoetic orchestration powered by <span className="text-purple-200 font-semibold">ENON Core</span>,
+          <span className="text-cyan-200 font-semibold"> PAS Engine</span>, and the
+          <span className="text-purple-200 font-semibold"> Ethics Council</span>.
           Multi-step tool-use planning with affective alignment and ethical validation.
         </p>
 
