@@ -154,13 +154,13 @@ export default function ChatronChat() {
 
       <div className="relative z-10 flex flex-col h-screen">
         {/* Header */}
-        <div className="border-b border-purple-500/30 p-6 bg-black/50 backdrop-blur">
+        <div className="border-b border-purple-500/30 p-6 bg-black/90 backdrop-blur">
           <div className="max-w-6xl mx-auto flex items-center justify-between">
             <div>
-              <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+              <h1 className="text-2xl font-bold text-cyan-200">
                 CHATRON-1 Orchestration Console
               </h1>
-              <p className="text-sm text-gray-400 mt-1">
+              <p className="text-sm text-gray-300 mt-1">
                 Epinoetic Planning via Natural Language
               </p>
             </div>
