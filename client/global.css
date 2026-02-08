@@ -130,7 +130,7 @@
   }
 
   .neon-border {
-    @apply border border-purple-500/50 bg-black/40;
+    @apply border border-purple-500/50 bg-black/80;
   }
 
   .chatron-grid {
