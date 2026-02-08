@@ -98,20 +98,20 @@ export default function ChatronDashboard() {
         {/* System Status Cards */}
         <div className="grid grid-cols-3 gap-4 mb-8">
           <Card className="neon-border p-6">
-            <div className="text-gray-400 text-sm mb-2">Total Requests</div>
-            <div className="text-3xl font-bold text-purple-400">
+            <div className="text-gray-300 text-sm mb-2">Total Requests</div>
+            <div className="text-3xl font-bold text-purple-300">
               {systemStatus.totalRequests}
             </div>
           </Card>
           <Card className="neon-border p-6">
-            <div className="text-gray-400 text-sm mb-2">Active Constraints</div>
-            <div className="text-3xl font-bold text-cyan-400">
+            <div className="text-gray-300 text-sm mb-2">Active Constraints</div>
+            <div className="text-3xl font-bold text-cyan-300">
               {systemStatus.constraintsActive}
             </div>
           </Card>
           <Card className="neon-border p-6">
-            <div className="text-gray-400 text-sm mb-2">System Status</div>
-            <div className="text-lg font-bold text-green-400 capitalize">
+            <div className="text-gray-300 text-sm mb-2">System Status</div>
+            <div className="text-lg font-bold text-green-300 capitalize">
               {systemStatus.uptime}
             </div>
           </Card>
