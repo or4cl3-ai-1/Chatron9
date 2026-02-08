@@ -279,9 +279,9 @@ export default function ChatronChat() {
                     )}
                   </Card>
                 ) : (
-                  <Card className="max-w-2xl bg-gradient-to-r from-gray-700/20 to-gray-600/10 border-gray-500/30 p-4">
-                    <p className="text-gray-300 text-sm">{message.content}</p>
-                    <p className="text-xs text-gray-500 mt-2">
+                  <Card className="max-w-2xl bg-gray-800/60 border-gray-600/50 p-4">
+                    <p className="text-gray-100 text-sm">{message.content}</p>
+                    <p className="text-xs text-gray-400 mt-2">
                       {new Date(message.timestamp).toLocaleTimeString()}
                     </p>
                   </Card>
