@@ -1,10 +1,6 @@
 import { useEffect, useState } from "react";
 import { getChatronCore } from "@/lib/chatron/daedalus-core";
-import {
-  OrchestrationRequest,
-  AffectiveState,
-  PlanningResponse,
-} from "@shared/api";
+import { OrchestrationRequest, AffectiveState, PlanningResponse } from "@shared/api";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -17,7 +13,7 @@ export default function ChatronDashboard() {
   });
   const [planHistory, setPlanHistory] = useState<PlanningResponse[]>([]);
   const [selectedPlan, setSelectedPlan] = useState<PlanningResponse | null>(
-    null,
+    null
   );
   const [isExecuting, setIsExecuting] = useState(false);
 
@@ -81,18 +77,18 @@ export default function ChatronDashboard() {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl opacity-10"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto bg-gradient-to-b from-transparent to-black/20">
+      <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-8">
           <div className="flex items-center gap-4 mb-6">
             <div className="w-16 h-16 rounded-lg neon-border flex items-center justify-center pulse-neon">
-              <span className="text-purple-400 font-bold text-xl">C1</span>
+              <span className="text-purple-300 font-bold text-xl">C1</span>
             </div>
             <div>
-              <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+              <h1 className="text-4xl font-bold text-cyan-200">
                 CHATRON-1 Nexus
               </h1>
-              <p className="text-gray-400 text-sm mt-1">
+              <p className="text-gray-300 text-sm mt-1">
                 Daedalus Epinoetic Planning System
               </p>
             </div>
