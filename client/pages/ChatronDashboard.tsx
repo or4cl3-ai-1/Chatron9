@@ -147,20 +147,20 @@ export default function ChatronDashboard() {
         {/* Selected Plan Display */}
         {selectedPlan && (
           <Card className="neon-border p-8 mb-8">
-            <h2 className="text-xl font-bold text-cyan-300 mb-4">
+            <h2 className="text-xl font-bold text-cyan-200 mb-4">
               Selected Plan
             </h2>
             <div className="grid grid-cols-2 gap-8">
               <div>
                 <div className="mb-4">
-                  <label className="text-gray-400 text-sm">Plan ID</label>
+                  <label className="text-gray-300 text-sm">Plan ID</label>
                   <div className="text-sm font-mono text-purple-300 mt-1">
                     {selectedPlan.selectedPlan.planId}
                   </div>
                 </div>
 
                 <div className="mb-4">
-                  <label className="text-gray-400 text-sm">Score</label>
+                  <label className="text-gray-300 text-sm">Score</label>
                   <div className="mt-2">
                     <div className="flex items-center gap-2">
                       <div className="flex-1 h-2 bg-gray-700 rounded-full overflow-hidden">
