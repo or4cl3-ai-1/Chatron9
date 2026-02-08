@@ -171,7 +171,7 @@ export default function ChatronDashboard() {
                           }}
                         ></div>
                       </div>
-                      <span className="text-cyan-400 font-bold">
+                      <span className="text-cyan-300 font-bold">
                         {(selectedPlan.selectedPlan.score * 100).toFixed(1)}%
                       </span>
                     </div>
@@ -179,7 +179,7 @@ export default function ChatronDashboard() {
                 </div>
 
                 <div className="mb-4">
-                  <label className="text-gray-400 text-sm">
+                  <label className="text-gray-300 text-sm">
                     Ethical Approval
                   </label>
                   <div className="mt-2">
