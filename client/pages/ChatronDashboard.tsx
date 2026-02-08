@@ -119,10 +119,10 @@ export default function ChatronDashboard() {
 
         {/* Main Control Section */}
         <Card className="neon-border p-8 mb-8">
-          <h2 className="text-xl font-bold text-purple-300 mb-4">
+          <h2 className="text-xl font-bold text-purple-200 mb-4">
             Epinoetic Planning Cycle
           </h2>
-          <p className="text-gray-300 mb-6">
+          <p className="text-gray-200 mb-6">
             Initiate the planning cycle to generate optimized tool-use plans
             aligned with ethical constraints and affective state.
           </p>
