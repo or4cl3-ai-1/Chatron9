@@ -216,25 +216,25 @@ export default function ChatronChat() {
                       <div className="mt-4 border-t border-cyan-500/30 pt-4">
                         <div className="grid grid-cols-2 gap-4 mb-4">
                           <div>
-                            <label className="text-xs text-gray-400">
+                            <label className="text-xs text-gray-300">
                               Plan ID
                             </label>
-                            <p className="text-xs font-mono text-cyan-300 mt-1">
+                            <p className="text-xs font-mono text-cyan-200 mt-1">
                               {message.data.selectedPlan.planId}
                             </p>
                           </div>
                           <div>
-                            <label className="text-xs text-gray-400">
+                            <label className="text-xs text-gray-300">
                               Confidence
                             </label>
-                            <p className="text-sm font-bold text-purple-400 mt-1">
+                            <p className="text-sm font-bold text-purple-200 mt-1">
                               {(message.data.selectedPlan.score * 100).toFixed(1)}%
                             </p>
                           </div>
                         </div>
 
                         <div className="mb-4">
-                          <label className="text-xs text-gray-400 block mb-2">
+                          <label className="text-xs text-gray-300 block mb-2">
                             Tool Calls
                           </label>
                           <div className="space-y-1">
@@ -242,15 +242,15 @@ export default function ChatronChat() {
                               (tool, idx) => (
                                 <div
                                   key={tool.id}
-                                  className="text-xs bg-black/30 p-2 rounded border border-cyan-500/20"
+                                  className="text-xs bg-black/60 p-2 rounded border border-cyan-500/20"
                                 >
-                                  <span className="text-cyan-400 font-mono">
+                                  <span className="text-cyan-300 font-mono">
                                     {idx + 1}.
                                   </span>
-                                  <span className="text-gray-300 ml-2">
+                                  <span className="text-gray-200 ml-2">
                                     {tool.name}
                                   </span>
-                                  <span className="text-gray-500 text-xs ml-auto float-right">
+                                  <span className="text-gray-400 text-xs ml-auto float-right">
                                     {tool.description}
                                   </span>
                                 </div>
