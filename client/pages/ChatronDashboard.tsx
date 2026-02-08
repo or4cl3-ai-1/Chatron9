@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import { getChatronCore } from "@/lib/chatron/daedalus-core";
-import { OrchestrationRequest, AffectiveState, PlanningResponse } from "@shared/api";
+import {
+  OrchestrationRequest,
+  AffectiveState,
+  PlanningResponse,
+} from "@shared/api";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -13,7 +17,7 @@ export default function ChatronDashboard() {
   });
   const [planHistory, setPlanHistory] = useState<PlanningResponse[]>([]);
   const [selectedPlan, setSelectedPlan] = useState<PlanningResponse | null>(
-    null
+    null,
   );
   const [isExecuting, setIsExecuting] = useState(false);
 

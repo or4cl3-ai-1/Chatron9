@@ -27,17 +27,22 @@ export default function Index() {
         </h1>
         <p className="text-2xl text-white mb-2">The Daedalus Nexus</p>
         <p className="text-gray-100 mb-12 text-lg leading-relaxed">
-          Epinoetic orchestration powered by <span className="text-purple-200 font-semibold">ENON Core</span>,
-          <span className="text-cyan-200 font-semibold"> PAS Engine</span>, and the
-          <span className="text-purple-200 font-semibold"> Ethics Council</span>.
-          Multi-step tool-use planning with affective alignment and ethical validation.
+          Epinoetic orchestration powered by{" "}
+          <span className="text-purple-200 font-semibold">ENON Core</span>,
+          <span className="text-cyan-200 font-semibold"> PAS Engine</span>, and
+          the
+          <span className="text-purple-200 font-semibold"> Ethics Council</span>
+          . Multi-step tool-use planning with affective alignment and ethical
+          validation.
         </p>
 
         {/* Feature Cards */}
         <div className="grid grid-cols-3 gap-6 mb-12">
           <Card className="neon-border p-6 backdrop-blur">
             <div className="text-4xl mb-3">🔮</div>
-            <h3 className="text-purple-200 font-semibold mb-2 text-lg">Superposition</h3>
+            <h3 className="text-purple-200 font-semibold mb-2 text-lg">
+              Superposition
+            </h3>
             <p className="text-sm text-gray-100">
               ENON generates diverse planning superpositions
             </p>
@@ -45,7 +50,9 @@ export default function Index() {
 
           <Card className="neon-border p-6 backdrop-blur">
             <div className="text-4xl mb-3">💫</div>
-            <h3 className="text-cyan-200 font-semibold mb-2 text-lg">Affective Alignment</h3>
+            <h3 className="text-cyan-200 font-semibold mb-2 text-lg">
+              Affective Alignment
+            </h3>
             <p className="text-sm text-gray-100">
               PAS engine weights plans by emotional state
             </p>
@@ -53,7 +60,9 @@ export default function Index() {
 
           <Card className="neon-border p-6 backdrop-blur">
             <div className="text-4xl mb-3">⚖️</div>
-            <h3 className="text-purple-200 font-semibold mb-2 text-lg">Ethical Validation</h3>
+            <h3 className="text-purple-200 font-semibold mb-2 text-lg">
+              Ethical Validation
+            </h3>
             <p className="text-sm text-gray-100">
               Ethics Council ensures moral compliance
             </p>

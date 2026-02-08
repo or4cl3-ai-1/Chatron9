@@ -68,18 +68,15 @@ export default function ChatronChat() {
     const newAffectiveState = {
       valence: Math.max(
         -1,
-        Math.min(
-          1,
-          affectiveState.valence + (Math.random() * 0.2 - 0.1)
-        )
+        Math.min(1, affectiveState.valence + (Math.random() * 0.2 - 0.1)),
       ),
       arousal: Math.max(
         0,
-        Math.min(1, affectiveState.arousal + (Math.random() * 0.15 - 0.075))
+        Math.min(1, affectiveState.arousal + (Math.random() * 0.15 - 0.075)),
       ),
       trust: Math.max(
         0,
-        Math.min(1, affectiveState.trust + (Math.random() * 0.1 - 0.05))
+        Math.min(1, affectiveState.trust + (Math.random() * 0.1 - 0.05)),
       ),
     };
     setAffectiveState(newAffectiveState);
@@ -167,9 +164,7 @@ export default function ChatronChat() {
             <div className="flex gap-2">
               <Badge
                 className={`text-xs ${
-                  affectiveState.valence > 0
-                    ? "bg-green-600"
-                    : "bg-red-600"
+                  affectiveState.valence > 0 ? "bg-green-600" : "bg-red-600"
                 } text-white`}
               >
                 Val: {affectiveState.valence.toFixed(2)}
@@ -228,7 +223,10 @@ export default function ChatronChat() {
                               Confidence
                             </label>
                             <p className="text-sm font-bold text-purple-200 mt-1">
-                              {(message.data.selectedPlan.score * 100).toFixed(1)}%
+                              {(message.data.selectedPlan.score * 100).toFixed(
+                                1,
+                              )}
+                              %
                             </p>
                           </div>
                         </div>
@@ -254,7 +252,7 @@ export default function ChatronChat() {
                                     {tool.description}
                                   </span>
                                 </div>
-                              )
+                              ),
                             )}
                           </div>
                         </div>
