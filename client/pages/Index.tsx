@@ -78,10 +78,10 @@ export default function Index() {
 
         {/* System Info */}
         <div className="mt-12 pt-8 border-t border-purple-500/30">
-          <p className="text-xs text-gray-500 mb-4">
+          <p className="text-xs text-gray-300 mb-4 font-semibold">
             CHATRON 9.0 • Daedalus Epinoetic Orchestration System
           </p>
-          <div className="text-xs text-gray-600 space-y-1">
+          <div className="text-xs text-gray-200 space-y-1">
             <p>🔬 Advanced planning cycle with vector fusion</p>
             <p>🎯 Tool-use orchestration with ethical constraints</p>
             <p>📊 Real-time affective state tracking</p>
