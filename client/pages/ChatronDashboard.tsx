@@ -77,7 +77,7 @@ export default function ChatronDashboard() {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl opacity-10"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto">
+      <div className="relative z-10 max-w-7xl mx-auto bg-gradient-to-b from-transparent to-black/20">
         {/* Header */}
         <div className="mb-8">
           <div className="flex items-center gap-4 mb-6">
