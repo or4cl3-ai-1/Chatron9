@@ -210,27 +210,27 @@ export default function ChatronDashboard() {
 
             {/* Tool Calls */}
             <div className="mt-8">
-              <h3 className="text-lg font-semibold text-purple-300 mb-4">
+              <h3 className="text-lg font-semibold text-purple-200 mb-4">
                 Tool Calls ({selectedPlan.selectedPlan.toolCalls.length})
               </h3>
               <div className="space-y-3">
                 {selectedPlan.selectedPlan.toolCalls.map((tool, idx) => (
                   <div
                     key={tool.id}
-                    className="border border-purple-500/30 rounded p-4 bg-black/50"
+                    className="border border-purple-500/30 rounded p-4 bg-black/70"
                   >
                     <div className="flex items-start justify-between mb-2">
-                      <span className="font-mono text-cyan-400 text-sm">
+                      <span className="font-mono text-cyan-300 text-sm">
                         {idx + 1}. {tool.name}
                       </span>
-                      <Badge className="text-xs bg-purple-600/50 text-purple-200">
+                      <Badge className="text-xs bg-purple-600/70 text-purple-100">
                         Tool
                       </Badge>
                     </div>
-                    <p className="text-sm text-gray-300 mb-2">
+                    <p className="text-sm text-gray-200 mb-2">
                       {tool.description}
                     </p>
-                    <p className="text-xs text-gray-500">
+                    <p className="text-xs text-gray-400">
                       Expected: {tool.expectedOutput}
                     </p>
                   </div>
