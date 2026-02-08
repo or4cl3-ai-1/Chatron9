@@ -195,14 +195,14 @@ export default function ChatronChat() {
                 }`}
               >
                 {message.type === "user" ? (
-                  <Card className="max-w-xl bg-gradient-to-r from-purple-600/30 to-purple-500/20 border-purple-500/50 p-4">
-                    <p className="text-gray-200">{message.content}</p>
-                    <p className="text-xs text-gray-500 mt-2">
+                  <Card className="max-w-xl bg-gradient-to-r from-purple-900/60 to-purple-800/50 border-purple-500/50 p-4">
+                    <p className="text-gray-100">{message.content}</p>
+                    <p className="text-xs text-gray-400 mt-2">
                       {new Date(message.timestamp).toLocaleTimeString()}
                     </p>
                   </Card>
                 ) : message.type === "plan" ? (
-                  <Card className="max-w-2xl bg-gradient-to-r from-cyan-600/20 to-cyan-500/10 border-cyan-500/50 p-4 w-full">
+                  <Card className="max-w-2xl bg-gradient-to-r from-cyan-900/50 to-cyan-800/40 border-cyan-500/50 p-4 w-full">
                     <div className="mb-3">
                       <p className="text-cyan-300 font-semibold text-sm">
                         {message.content}
