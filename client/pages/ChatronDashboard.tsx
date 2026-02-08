@@ -243,36 +243,36 @@ export default function ChatronDashboard() {
         {/* Plan History */}
         {planHistory.length > 0 && (
           <Card className="neon-border p-8">
-            <h2 className="text-xl font-bold text-purple-300 mb-4">
+            <h2 className="text-xl font-bold text-purple-200 mb-4">
               Recent Plans ({planHistory.length})
             </h2>
             <div className="space-y-2 max-h-64 overflow-y-auto">
               {planHistory.map((plan) => (
                 <div
                   key={plan.requestId}
-                  className="border border-gray-700 rounded p-3 cursor-pointer hover:border-purple-500/50 transition-colors bg-black/50"
+                  className="border border-gray-600 rounded p-3 cursor-pointer hover:border-purple-500/50 transition-colors bg-black/70"
                   onClick={() => setSelectedPlan(plan)}
                 >
                   <div className="flex items-center justify-between">
                     <div>
-                      <div className="font-mono text-xs text-gray-500">
+                      <div className="font-mono text-xs text-gray-400">
                         {plan.requestId}
                       </div>
-                      <div className="text-sm text-cyan-400 font-semibold">
+                      <div className="text-sm text-cyan-300 font-semibold">
                         {plan.selectedPlan.planId}
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
                       <div className="text-right">
-                        <span className="text-purple-400 font-bold">
+                        <span className="text-purple-300 font-bold">
                           {(plan.selectedPlan.score * 100).toFixed(0)}%
                         </span>
                       </div>
                       <Badge
                         className={`text-xs ${
                           plan.executionStatus === "ready"
-                            ? "bg-blue-600"
-                            : "bg-gray-600"
+                            ? "bg-blue-600 text-white"
+                            : "bg-gray-700 text-gray-200"
                         }`}
                       >
                         {plan.executionStatus}
