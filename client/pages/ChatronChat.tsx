@@ -310,7 +310,7 @@ export default function ChatronChat() {
         </div>
 
         {/* Input Area */}
-        <div className="border-t border-purple-500/30 p-6 bg-black/50 backdrop-blur">
+        <div className="border-t border-purple-500/30 p-6 bg-black/90 backdrop-blur">
           <div className="max-w-6xl mx-auto flex gap-4">
             <Input
               value={inputValue}
@@ -322,7 +322,7 @@ export default function ChatronChat() {
                 }
               }}
               placeholder="Describe your planning request to CHATRON-1..."
-              className="flex-1 bg-black/50 border-purple-500/30 text-gray-200 placeholder-gray-500"
+              className="flex-1 bg-gray-900 border-purple-500/30 text-gray-100 placeholder-gray-500"
               disabled={isLoading}
             />
             <Button
