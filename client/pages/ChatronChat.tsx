@@ -204,10 +204,10 @@ export default function ChatronChat() {
                 ) : message.type === "plan" ? (
                   <Card className="max-w-2xl bg-gradient-to-r from-cyan-900/50 to-cyan-800/40 border-cyan-500/50 p-4 w-full">
                     <div className="mb-3">
-                      <p className="text-cyan-300 font-semibold text-sm">
+                      <p className="text-cyan-200 font-semibold text-sm">
                         {message.content}
                       </p>
-                      <p className="text-xs text-gray-500 mt-1">
+                      <p className="text-xs text-gray-400 mt-1">
                         {new Date(message.timestamp).toLocaleTimeString()}
                       </p>
                     </div>
