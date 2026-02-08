@@ -199,10 +199,10 @@ export default function ChatronDashboard() {
               </div>
 
               <div>
-                <label className="text-gray-400 text-sm mb-2 block">
+                <label className="text-gray-300 text-sm mb-2 block">
                   Reasoning
                 </label>
-                <p className="text-sm text-gray-300 bg-black/50 p-4 rounded border border-purple-500/30">
+                <p className="text-sm text-gray-200 bg-black/70 p-4 rounded border border-purple-500/30">
                   {selectedPlan.selectedPlan.reasoning}
                 </p>
               </div>
