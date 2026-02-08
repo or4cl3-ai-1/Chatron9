@@ -290,15 +290,15 @@ export default function ChatronChat() {
             ))}
             {isLoading && (
               <div className="flex justify-start">
-                <Card className="bg-gradient-to-r from-purple-600/30 to-purple-500/20 border-purple-500/50 p-4">
+                <Card className="bg-purple-900/60 border-purple-500/50 p-4">
                   <div className="flex gap-2">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full animate-bounce"></div>
+                    <div className="w-2 h-2 bg-purple-300 rounded-full animate-bounce"></div>
                     <div
-                      className="w-2 h-2 bg-purple-400 rounded-full animate-bounce"
+                      className="w-2 h-2 bg-purple-300 rounded-full animate-bounce"
                       style={{ animationDelay: "0.1s" }}
                     ></div>
                     <div
-                      className="w-2 h-2 bg-purple-400 rounded-full animate-bounce"
+                      className="w-2 h-2 bg-purple-300 rounded-full animate-bounce"
                       style={{ animationDelay: "0.2s" }}
                     ></div>
                   </div>
