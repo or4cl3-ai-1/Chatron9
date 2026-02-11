@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
+import { ChatronLogo } from "@/components/ChatronLogo";
 
 interface ChatMessage {
   id: string;
@@ -152,14 +153,17 @@ export default function ChatronChat() {
       <div className="relative z-10 flex flex-col h-screen">
         {/* Header */}
         <div className="border-b border-purple-500/30 p-6 bg-black/90 backdrop-blur">
-          <div className="max-w-6xl mx-auto flex items-center justify-between">
-            <div>
-              <h1 className="text-2xl font-bold text-cyan-200">
-                CHATRON-1 Orchestration Console
-              </h1>
-              <p className="text-sm text-gray-300 mt-1">
-                Epinoetic Planning via Natural Language
-              </p>
+          <div className="max-w-6xl mx-auto flex items-center justify-between gap-6">
+            <div className="flex items-center gap-4">
+              <ChatronLogo size="sm" variant="full" animated />
+              <div>
+                <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-200 to-cyan-200">
+                  CHATRON-1 Console
+                </h1>
+                <p className="text-sm text-gray-300 mt-1">
+                  Epinoetic Planning via Natural Language
+                </p>
+              </div>
             </div>
             <div className="flex gap-2">
               <Badge

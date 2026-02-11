@@ -4,6 +4,7 @@ import { OrchestrationRequest, AffectiveState, PlanningResponse } from "@shared/
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ChatronLogo } from "@/components/ChatronLogo";
 
 export default function ChatronDashboard() {
   const [systemStatus, setSystemStatus] = useState({
@@ -80,12 +81,10 @@ export default function ChatronDashboard() {
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-8">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="w-16 h-16 rounded-lg neon-border flex items-center justify-center pulse-neon">
-              <span className="text-purple-300 font-bold text-xl">C1</span>
-            </div>
+          <div className="flex items-center gap-6 mb-6">
+            <ChatronLogo size="sm" variant="full" animated />
             <div>
-              <h1 className="text-4xl font-bold text-cyan-200">
+              <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-200 to-cyan-200">
                 CHATRON-1 Nexus
               </h1>
               <p className="text-gray-300 text-sm mt-1">
@@ -93,6 +92,7 @@ export default function ChatronDashboard() {
               </p>
             </div>
           </div>
+          <div className="h-px bg-gradient-to-r from-purple-500/30 via-cyan-500/30 to-purple-500/30"></div>
         </div>
 
         {/* System Status Cards */}
